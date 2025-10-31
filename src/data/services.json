@@ -1,0 +1,184 @@
+{
+    "services": [
+        {
+            "name": "GST Registration",
+            "description": "GST Registration is the process of obtaining a unique Goods and Services Tax Identification Number (GSTIN) to legally collect and remit GST.",
+            "url": "/gst-registration-services"
+        },
+        {
+            "name": "MSME / Udyam Registration",
+            "description": "MSME Registration is the process of officially registering business under the Micro, Small, and Medium Enterprises (MSME) Act, allowing businesses to access various government benefits aimed at promoting the growth of small and medium enterprises.",
+            "url": "/msme-registration-services"
+        },
+        {
+            "name": "PF Registration",
+            "description": "PF Registration is the process of registering a business or organization with the Employees' Provident Fund Organization (EPFO) to provide retirement benefits to employees.",
+            "url": "/pf-registration-services"
+        },
+        {
+            "name": "ESI Registration",
+            "description": "ESI Registration is the process of registering a business with the Employees' State Insurance Corporation (ESIC) to provide health and social security benefits to employees.",
+            "url": "/esi-registration-services"
+        },
+        {
+            "name": "PAN Registration",
+            "description": "PAN Registration is the process of obtaining a Permanent Account Number (PAN) from the Income Tax Department, used for tax identification and financial transactions.",
+            "url": "/pan-registration-services"
+        },
+        {
+            "name": "TAN Registration",
+            "description": "TAN Registration is the process of obtaining a Tax Deduction and Collection Account Number (TAN) from the Income Tax Department, required for businesses to deduct or collect tax at source.",
+            "url": "/tan-registration-services"
+        },
+        {
+            "name": "Gumasta Registration",
+            "description": "Gumasta Registration is the process of obtaining a license for businesses to operate legally under the Shops and Establishments Act, ensuring compliance with local regulations.",
+            "url": "/gumasta-registration-services"
+        },
+        {
+            "name": "Trademark Registration",
+            "description": "Trademark Registration is the process of legally protecting a brand, logo, or symbol to distinguish goods or services and prevent unauthorized use.",
+            "url": "/trademark-registration-services"
+        },
+        {
+            "name": "Import Export Code Registration",
+            "description": "Import Export Code (IEC) Registration is the process of obtaining a unique identification number from the Directorate General of Foreign Trade (DGFT), required for businesses involved in international trade.",
+            "url": "/import-export-code-registration-services"
+        },
+        {
+            "name": "Class III, DGFT DSC Registration",
+            "description": "Class III DGFT DSC Registration is the process of obtaining a digital signature certificate (DSC) for secure electronic submissions to the Directorate General of Foreign Trade (DGFT) for import/export activities.",
+            "url": "/class-iii-dgft-dsc-registration-services"
+        },
+        {
+            "name": "Proprietorship Registration",
+            "description": "Proprietorship Registration is the process of legally establishing a business owned and operated by a single individual, allowing them to operate under a registered trade name.",
+            "url": "/proprietorship-registration-services"
+        },
+        {
+            "name": "Partnership Registration",
+            "description": "Partnership Registration is the process of legally forming a business partnership between two or more individuals, enabling them to operate jointly under a registered name.",
+            "url": "/partnership-registration-services"
+        },
+        {
+            "name": "One Person Company Registration",
+            "description": "One Person Company Registration is the process of legally forming a company owned and managed by a single individual, offering limited liability protection.",
+            "url": "/one-person-company-registration-services"
+        },
+        {
+            "name": "Limited Liability Partnership Registration",
+            "description": "Limited Liability Partnership Registration is the process of legally forming a partnership business with limited liability protection for its partners.",
+            "url": "/limited-liability-partnership-registration-services"
+        },
+        {
+            "name": "Private Limited Company Registration",
+            "description": "Private Limited Company Registration is the process of legally incorporating a company with limited liability and a separate legal identity, owned by private shareholders.",
+            "url": "/private-limited-company-registration-services"
+        },
+        {
+            "name": "Public Limited Company",
+            "description": "Public Limited Company Registration is the process of legally incorporating a company that offers shares to the public and has limited liability for its shareholders.",
+            "url": "/public-limited-company-registration-services"
+        },
+        {
+            "name": "Income Tax Filing",
+            "description": "Income Tax Filing is the process of submitting an individual's or business's income tax return to the tax authorities, detailing earnings, deductions, and tax liabilities for the assessment year.",
+            "url": "/income-tax-filing-services"
+        },
+        {
+            "name": "GST Return Filing",
+            "description": "GST Return Filing is the process of submitting periodic tax returns to the Goods and Services Tax (GST) authorities, detailing sales, purchases, and tax liabilities to ensure compliance with GST laws.",
+            "url": "/gst-return-filing-services"
+        },
+        {
+            "name": "TDS Return",
+            "description": "TDS Return is the process of filing a return with the Income Tax Department that details the tax deducted at source (TDS) on various payments such as salaries, interest, and contractor payments made by an organization.",
+            "url": "/tds-return-services"
+        },
+        {
+            "name": "ESI Return Filing",
+            "description": "ESI Return Filing is the process of submitting the Employee State Insurance (ESI) contribution details to the Employees' State Insurance Corporation (ESIC), ensuring compliance with the ESI Act and payment of employee benefits.",
+            "url": "/esi-return-filing-services"
+        },
+        {
+            "name": "PF Return",
+            "description": "PF Return is a periodic submission to the Employees' Provident Fund (EPF) organization that reports the contributions made by both the employer and employee to the provident fund. It ensures compliance with the EPF Act and helps maintain accurate records of the fund for each employee.",
+            "url": "/pf-return-services"
+        },
+        {
+            "name": "Professional Tax Return",
+            "description": "A Professional Tax Return is a mandatory filing submitted by employers or self-employed individuals to the state government, detailing the professional tax paid on earnings, wages, or salary as per the respective state's professional tax laws.",
+            "url": "/professional-tax-return-services"
+        },
+        {
+            "name": "Annual Filing",
+            "description": "Annual Filing is the process of submitting required financial and statutory documents, such as balance sheets, profit and loss statements, and other mandatory reports, to regulatory authorities to ensure compliance with company laws and tax regulations.",
+            "url": "/annual-filing-services"
+        },
+        {
+            "name": "Registered Office Change",
+            "description": "Registered Office Change is the process of updating the official address of a company with the relevant authorities, ensuring that all communications and legal notices are sent to the new location.",
+            "url": "/registered-office-change-services"
+        },
+        {
+            "name": "Appointment Of Directors",
+            "description": "Appointment of Directors is the process of formally selecting and appointing individuals to the board of directors of a company, in accordance with the company's bylaws and regulatory requirements.",
+            "url": "/appointment-of-directors-services"
+        },
+        {
+            "name": "Resignation Of Directors",
+            "description": "The resignation of a director from a company is a formal process governed by the Companies Act, 2013. We offer comprehensive services to help companies and directors manage the resignation process smoothly and efficiently.",
+            "url": "/resignation-of-directors-services"
+        },
+        {
+            "name": "Increase In Authorized Capital",
+            "description": "Increase in Authorized Capital is the process of raising the maximum limit of a company's share capital, allowing it to issue more shares and attract additional investment, in accordance with legal and regulatory procedures.",
+            "url": "/increase-in-authorized-capital-services"
+        },
+        {
+            "name": "Share Transfer",
+            "description": "Share Transfer is the process of transferring ownership of shares from one shareholder to another, following legal and regulatory procedures to ensure proper documentation and compliance with company laws.",
+            "url": "/share-transfer-services"
+        },
+        {
+            "name": "Application For DIN",
+            "description": "Application for DIN (Director Identification Number) is the process of applying for a unique identification number issued by the Ministry of Corporate Affairs (MCA) to an individual intending to become a director in a company.",
+            "url": "/application-for-din-services"
+        },
+        {
+            "name": "MOA Amendment",
+            "description": "MOA Amendment is the process of making changes to the Memorandum of Association (MOA) of a company, which outlines its objectives, capital structure, and other key details, in accordance with legal requirements and approval from shareholders.",
+            "url": "/moa-amendment-services"
+        },
+        {
+            "name": "Appointment Of Partners",
+            "description": "Appointment of Partners is the process of officially adding new partners to a partnership firm, which involves updating the partnership agreement and ensuring compliance with legal and regulatory requirements.",
+            "url": "/appointment-of-partners-services"
+        },
+        {
+            "name": "Resignation Of Partners",
+            "description": "Resignation of Partners is the process through which a partner formally withdraws from a partnership firm, requiring an update to the partnership agreement and adherence to legal formalities.",
+            "url": "/resignation-of-partners-services"
+        },
+        {
+            "name": "Winding Up Of Company",
+            "description": "Winding Up of a Company is the legal process of closing down a company by liquidating its assets, settling debts, and distributing any remaining assets to shareholders, following the relevant procedures outlined by law.",
+            "url": "/winding-up-of-company-services"
+        },
+        {
+            "name": "Winding Up Of LLP",
+            "description": "Winding Up of an LLP (Limited Liability Partnership) is the process of dissolving the partnership, which involves settling its liabilities, distributing remaining assets among partners, and filing necessary documents with the regulatory authorities to officially close the LLP.",
+            "url": "/winding-up-of-llp-services"
+        },
+        {
+            "name": "Company Name Change",
+            "description": "Company Name Change is the process of legally altering a company's registered name, which involves approval from shareholders, filing with the relevant authorities, and updating official documents and records.",
+            "url": "/company-name-change-services"
+        },
+        {
+            "name":"Shifting of Registered Office",
+            "description": "Shifting of Registered Office is the process of changing the official address of a company, requiring approval from the board of directors, shareholders, and filing necessary forms with the regulatory authorities to update the company's records.",
+            "url": "/shifting-of-registered-office-services"
+        }
+    ]
+}
