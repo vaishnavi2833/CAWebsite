@@ -1,0 +1,39 @@
+.aboutpage-container{
+    margin-top: 1rem;
+    padding: 0% 2.5rem;
+}
+
+.aboutpage-container h2{
+    padding: 1.2rem;
+    font-size: 2rem;
+    margin: 0;
+    color: #023c6c;
+}
+
+.custom-line {
+  border: none;
+  border-top: 5px solid #4CAF50;
+  width: 20%;
+  padding-left: 1.2rem;
+  margin-left: 1.2rem;
+}
+
+.aboutpage-container img{
+    height: 65vh;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.aboutpage-container p{
+    padding: 1.5rem;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .aboutpage-container img {
+    height: auto;
+  }
+}

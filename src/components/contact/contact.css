@@ -1,0 +1,65 @@
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #004992;
+  color: white;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  gap: 20px; /* Optional spacing between columns */
+}
+
+.about-us-sec,
+.quick-links,
+.address,
+.contact-us {
+  flex: 1 1 22%; 
+  min-width: 220px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+.contact-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.contact-text {
+  margin: 0;
+  line-height: 1.6;
+  word-wrap: break-word; 
+}
+
+.quick-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-link-item {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.quick-link-item:hover {
+  color: #7ab8f6;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-line p {
+  margin-left: 10px;
+  word-break: break-word;
+}
+
+h2{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #7ab8f6;
+}
