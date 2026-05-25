@@ -66,7 +66,7 @@ const About = () => {
             <div className='services-list'>
                 
                 {services.slice(0, 6).map((service, index) => (
-                    <div key={index} className='service-item'>
+                    <div key={index} className='service-item' onClick={() => navigate(service.url)} style={{ cursor: 'pointer' }}>
                     <FontAwesomeIcon icon={faCheckCircle} size="3x" style={{ color: '#4CAF50' }} className="service-icon" />
                     <h3>{service.name}</h3>
                     <p>{service.short_description || service.description}</p>
