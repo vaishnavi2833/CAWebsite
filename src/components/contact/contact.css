@@ -1,12 +1,13 @@
 .contact-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   background-color: #004992;
   color: white;
   padding: 40px;
   font-family: Arial, sans-serif;
-  gap: 20px; /* Optional spacing between columns */
+  gap: 20px;
 }
 
 .about-us-sec,

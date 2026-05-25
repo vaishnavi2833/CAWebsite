@@ -126,6 +126,22 @@ import CGSTRules from './components/knowledgebank/CGSTRules.jsx';
 import ITBill2025 from './components/knowledgebank/ITBill2025.jsx';
 import FAQITBill from './components/knowledgebank/FAQITBill.jsx';
 import FAQITBillGeneral from './components/knowledgebank/FAQITBillGeneral.jsx';
+import TdsPage from './components/utilities/TdsPage.jsx';
+import RatesofIT from './components/utilities/RatesofIT.jsx';
+import TDSNRI from './components/utilities/TDSNRI.jsx';
+import DepricationCompanies from './components/utilities/DepricationCompanies.jsx';
+import DepricationIT from './components/utilities/DepricationIT.jsx';
+import ROCFiling from './components/utilities/ROCFiling.jsx';
+import ROCFee from './components/utilities/ROCFee.jsx';
+import CostInflation from './components/utilities/CostInflation.jsx';
+import IFSC from './components/utilities/IFSC.jsx';
+import MICR from './components/utilities/MICR.jsx';
+import NSCIntrest from './components/utilities/NSCIntrest.jsx';
+import GoldSilverRates from './components/utilities/GoldSilverRates.jsx';
+import StampDuty from './components/utilities/StampDuty.jsx';
+import LLPFees from './components/utilities/LLPFees.jsx';
+import Deduction from './components/utilities/Deduction.jsx';
+import Circulars from './components/utilities/Circulars.jsx';
 import Blog from './components/blog/Blog.jsx';
 import ContactPage from './components/contactpage/ContactPage.jsx';
 
@@ -260,6 +276,22 @@ const App = () => {
         <Route path='/kb/utilities/income-tax-bill-2025' element={<ITBill2025 />} />
         <Route path='/kb/utilities/faqs-income-tax-bill' element={<FAQITBill />} />
         <Route path='/kb/utilities/faqs-income-tax-bill-general' element={<FAQITBillGeneral />} />
+        <Route path='/kb/utilities/tds-tcs-rates' element={<TdsPage />} />
+        <Route path='/kb/utilities/rates-of-income-tax' element={<RatesofIT />} />
+        <Route path='/kb/utilities/tds-rates-nri-195' element={<TDSNRI />} />
+        <Route path='/kb/utilities/depreciation-rates-companies-act' element={<DepricationCompanies />} />
+        <Route path='/kb/utilities/depreciation-rates-income-tax' element={<DepricationIT />} />
+        <Route path='/kb/utilities/roc-filing-fees' element={<ROCFiling />} />
+        <Route path='/kb/utilities/roc-fee-structure' element={<ROCFee />} />
+        <Route path='/kb/utilities/cost-inflation-index' element={<CostInflation />} />
+        <Route path='/kb/utilities/ifsc-codes' element={<IFSC />} />
+        <Route path='/kb/utilities/micr-codes' element={<MICR />} />
+        <Route path='/kb/utilities/nsc-interest-rates' element={<NSCIntrest />} />
+        <Route path='/kb/utilities/gold-silver-rates' element={<GoldSilverRates />} />
+        <Route path='/kb/utilities/stamp-duty-rates' element={<StampDuty />} />
+        <Route path='/kb/utilities/llp-fees' element={<LLPFees />} />
+        <Route path='/kb/utilities/deduction-80tta-80ttb' element={<Deduction />} />
+        <Route path='/kb/utilities/circulars-notifications' element={<Circulars />} />
         <Route path='/blogs' element={<Blog />} />
         <Route path="/contact" element={<ContactPage/>}/>
       </Routes>

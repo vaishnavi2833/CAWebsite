@@ -24,10 +24,10 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'your_service_id',    // Replace with your actual EmailJS service ID
-      'your_template_id',   // Replace with your template ID
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       form.current,
-      'your_public_key'     // Replace with your EmailJS public key
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     ).then(
       (result) => {
         alert('Message sent successfully!');
