@@ -1,0 +1,140 @@
+/* ── Stamp Duty page ─────────────────────────────────────────────── */
+
+.sd-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  min-height: 100vh;
+  padding: 40px 16px 60px;
+}
+
+.sd-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.sd-page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.sd-subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+/* Search */
+
+.sd-search-bar {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto 32px;
+}
+
+.sd-search-bar input {
+  width: 100%;
+  padding: 10px 44px 10px 16px;
+  border: 2px solid #c5cae9;
+  border-radius: 24px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s;
+  box-sizing: border-box;
+}
+
+.sd-search-bar input:focus { border-color: #3f51b5; }
+
+.sd-clear-btn {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #888;
+  padding: 0;
+  line-height: 1;
+}
+.sd-clear-btn:hover { color: #333; }
+
+.sd-no-results {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 40px 0;
+}
+
+/* State block */
+
+.sd-state-block {
+  margin-bottom: 36px;
+}
+
+.sd-state-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: #283593;
+  padding: 11px 20px;
+  border-radius: 6px 6px 0 0;
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+
+/* Table */
+
+.sd-table-scroll {
+  overflow-x: auto;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.sd-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.83rem;
+  background: #fff;
+}
+
+.sd-table thead th {
+  background: #1a237e;
+  color: #fff;
+  padding: 10px 12px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.4;
+  vertical-align: bottom;
+  white-space: normal;
+}
+
+.sd-table tbody td {
+  padding: 9px 12px;
+  border-bottom: 1px solid #e8eaf6;
+  vertical-align: top;
+  line-height: 1.5;
+  color: #333;
+}
+
+.sd-table tbody tr.sd-row-alt { background: #f5f7fd; }
+.sd-table tbody tr:hover { background: #e8eaf6; }
+
+/* Column widths */
+.sd-col-type    { min-width: 220px; }
+.sd-col-num     { text-align: center; min-width: 70px; font-weight: 600; color: #1565c0; }
+.sd-col-wide    { min-width: 200px; }
+.sd-col-remarks { min-width: 180px; color: #555; font-size: 0.8rem; }
+
+.sd-nil {
+  color: #aaa;
+  text-align: center;
+  font-style: italic;
+}

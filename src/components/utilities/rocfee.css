@@ -1,0 +1,172 @@
+/* ── ROC Fee Structure page ──────────────────────────────────────────── */
+
+.rf-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  min-height: 100vh;
+  padding: 40px 16px 60px;
+}
+
+.rf-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ── Header ────────────────────────────────────────────────────────── */
+
+.rf-page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.rf-subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+}
+
+/* ── Section headings ──────────────────────────────────────────────── */
+
+.rf-section-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: #283593;
+  padding: 12px 20px;
+  border-radius: 6px 6px 0 0;
+  margin: 36px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.rf-section-sub {
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: #c5cae9;
+}
+
+.rf-sub-heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a237e;
+  margin: 0 0 6px;
+}
+
+/* ── Tables ────────────────────────────────────────────────────────── */
+
+.rf-table-scroll {
+  overflow-x: auto;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  margin-bottom: 0;
+}
+
+.rf-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.91rem;
+  background: #fff;
+}
+
+.rf-table thead th {
+  background: #1a237e;
+  color: #fff;
+  padding: 11px 16px;
+  font-weight: 600;
+  text-align: left;
+  white-space: normal;
+}
+
+.rf-table tbody td {
+  padding: 9px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+  color: #333;
+  line-height: 1.5;
+}
+
+.rf-table tbody tr.rf-row-alt { background: #f5f7fd; }
+.rf-table tbody tr:hover { background: #e8eaf6; }
+
+.rf-sl {
+  width: 60px;
+  text-align: center;
+  white-space: nowrap;
+  color: #555;
+  font-weight: 500;
+}
+
+.rf-fee {
+  text-align: right;
+  font-weight: 600;
+  color: #1565c0;
+  white-space: nowrap;
+}
+
+.rf-indent {
+  padding-left: 28px !important;
+}
+
+/* app table — ensure equal columns */
+.rf-app-table th:nth-child(3),
+.rf-app-table th:nth-child(4),
+.rf-app-table td:nth-child(3),
+.rf-app-table td:nth-child(4) {
+  text-align: center;
+  width: 160px;
+}
+
+/* Inline table inside info block */
+.rf-inline-table {
+  margin-top: 14px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+
+/* ── Info Block ────────────────────────────────────────────────────── */
+
+.rf-info-block {
+  background: #fff;
+  border-left: 4px solid #3f51b5;
+  border-radius: 0 6px 6px 0;
+  padding: 16px 20px;
+  margin: 12px 0 0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.rf-info-note {
+  margin-top: 12px;
+  border-left-color: #f9a825;
+}
+
+.rf-info-block p {
+  margin: 0 0 10px;
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.rf-info-block p:last-child { margin-bottom: 0; }
+
+/* ── Two-column layout (Other Fees) ────────────────────────────────── */
+
+.rf-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 12px;
+}
+
+.rf-two-col .rf-table-scroll {
+  border-radius: 0 0 6px 6px;
+}
+
+@media (max-width: 600px) {
+  .rf-two-col { grid-template-columns: 1fr; }
+}

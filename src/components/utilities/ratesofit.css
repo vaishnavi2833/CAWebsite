@@ -1,0 +1,247 @@
+/* ── Rates of Income Tax Page ── */
+
+.roit-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f4f7fb;
+}
+
+.roit-content {
+  max-width: 1100px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  flex: 1;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #1a2a3a;
+}
+
+/* ── Page title & subtitle ── */
+
+.roit-content .page-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #003a7a;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.roit-content .page-subtitle {
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* ── Year tabs ── */
+
+.roit-content .year-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.roit-content .year-tab {
+  padding: 8px 16px;
+  border: 1.5px solid #004992;
+  border-radius: 20px;
+  background: #fff;
+  color: #004992;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+
+.roit-content .year-tab:hover {
+  background: #e3edf9;
+}
+
+.roit-content .year-tab.active {
+  background: #004992;
+  color: #fff;
+}
+
+/* ── Section headings ── */
+
+.roit-content .section-heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #003a7a;
+  margin: 32px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #c8d8ec;
+}
+
+.roit-content .sub-section-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #004992;
+  margin: 18px 0 8px;
+}
+
+.roit-content .minor-heading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin: 12px 0 6px;
+}
+
+/* ── Slab blocks ── */
+
+.roit-content .slab-block {
+  margin-bottom: 20px;
+  max-width: none;
+  padding: 0;
+}
+
+.roit-content .slab-label {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: #1a3a5e;
+  margin-bottom: 8px;
+}
+
+/* ── Tables ── */
+
+.roit-content .table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 4px;
+}
+
+.roit-content .roit-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.roit-content .roit-table.narrow {
+  max-width: 420px;
+}
+
+.roit-content .roit-table thead tr:first-child th {
+  background: #003a7a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.roit-content .roit-table thead tr:last-child th {
+  background: #1a5db5;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.82rem;
+  padding: 7px 14px;
+}
+
+.roit-content .roit-table.simple thead tr th {
+  background: #003a7a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.roit-content .roit-table tbody td {
+  padding: 8px 14px;
+  border-bottom: 1px solid #e8eef5;
+  vertical-align: middle;
+}
+
+.roit-content .roit-table .row-even {
+  background: #f5f9ff;
+}
+
+.roit-content .roit-table .row-odd {
+  background: #fff;
+}
+
+.roit-content .roit-table .rate-cell {
+  font-weight: 700;
+  color: #c0392b;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ── Info lists ── */
+
+.roit-content .info-list {
+  margin: 8px 0 8px 20px;
+  padding: 0;
+  list-style: disc;
+}
+
+.roit-content .info-list li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #2a3a4a;
+}
+
+.roit-content .info-para {
+  font-size: 0.9rem;
+  margin: 8px 0;
+  color: #2a3a4a;
+}
+
+/* ── Note box ── */
+
+.roit-content .note-box {
+  background: #fff8e1;
+  border-left: 4px solid #f5a623;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  color: #5a3e00;
+  margin: 12px 0;
+  line-height: 1.55;
+}
+
+.roit-content .note-box ol {
+  margin: 6px 0 0 18px;
+  padding: 0;
+}
+
+.roit-content .note-box ol li {
+  margin-bottom: 4px;
+}
+
+/* ── Last updated ── */
+
+.roit-content .last-updated {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: right;
+  margin-top: 40px;
+  font-style: italic;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 700px) {
+  .roit-content .page-title {
+    font-size: 1.4rem;
+  }
+  .roit-content .year-tab {
+    padding: 6px 12px;
+    font-size: 0.82rem;
+  }
+  .roit-content .roit-table {
+    font-size: 0.8rem;
+  }
+  .roit-content .roit-table tbody td,
+  .roit-content .roit-table thead tr:first-child th,
+  .roit-content .roit-table thead tr:last-child th {
+    padding: 7px 8px;
+  }
+}

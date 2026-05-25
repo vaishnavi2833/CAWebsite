@@ -1,0 +1,251 @@
+/* ── TDS NRI Page ── */
+
+.nri-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f4f7fb;
+}
+
+.nri-content {
+  max-width: 1200px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  flex: 1;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #1a2a3a;
+}
+
+/* ── Title ── */
+
+.nri-content .nri-page-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #003a7a;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* ── Year tabs ── */
+
+.nri-content .nri-year-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.nri-content .nri-year-tab {
+  padding: 8px 18px;
+  border: 1.5px solid #004992;
+  border-radius: 20px;
+  background: #fff;
+  color: #004992;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+
+.nri-content .nri-year-tab:hover {
+  background: #e3edf9;
+}
+
+.nri-content .nri-year-tab.active {
+  background: #004992;
+  color: #fff;
+}
+
+/* ── Search bar ── */
+
+.nri-content .nri-search-bar {
+  position: relative;
+  max-width: 540px;
+  margin: 0 auto 26px;
+}
+
+.nri-content .nri-search-bar input {
+  width: 100%;
+  padding: 10px 40px 10px 16px;
+  border: 1.5px solid #c8d8ec;
+  border-radius: 24px;
+  font-size: 0.92rem;
+  outline: none;
+  background: #fff;
+  box-sizing: border-box;
+  color: #1a2a3a;
+}
+
+.nri-content .nri-search-bar input:focus {
+  border-color: #004992;
+}
+
+.nri-content .nri-clear-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #888;
+  cursor: pointer;
+}
+
+/* ── Sub-headings ── */
+
+.nri-content .nri-sub-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #003a7a;
+  margin: 22px 0 10px;
+  padding: 8px 14px;
+  background: #e8f0fb;
+  border-left: 4px solid #004992;
+  border-radius: 3px;
+}
+
+.nri-content .nri-section-note {
+  font-size: 0.88rem;
+  color: #5a3e00;
+  background: #fff8e1;
+  border-left: 4px solid #f5a623;
+  border-radius: 3px;
+  padding: 8px 14px;
+  margin-bottom: 14px;
+  font-style: italic;
+}
+
+/* ── Tables ── */
+
+.nri-content .nri-table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 24px;
+}
+
+.nri-content .nri-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.07);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.nri-content .nri-table thead th {
+  background: #003a7a;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 12px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.nri-content .nri-table tbody td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e8eef5;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.nri-content .nri-table .row-even {
+  background: #f5f9ff;
+}
+
+.nri-content .nri-table .row-odd {
+  background: #fff;
+}
+
+.nri-content .nri-table .col-section {
+  width: 130px;
+  white-space: nowrap;
+  color: #003a7a;
+  font-size: 0.82rem;
+}
+
+.nri-content .nri-table .col-payment {
+  min-width: 320px;
+}
+
+.nri-content .nri-table .col-rate {
+  width: 130px;
+  font-weight: 700;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.nri-content .nri-table tbody .col-rate {
+  color: #c0392b;
+}
+
+.nri-content .nri-table .sec195-header-row td {
+  background: #e3edf9;
+  font-weight: 600;
+  color: #003a7a;
+  padding: 8px 12px;
+}
+
+.nri-content .nri-table .sec195-title {
+  font-style: italic;
+}
+
+.nri-content .nri-table .sub-label {
+  padding-left: 24px;
+  font-size: 0.82rem;
+  color: #2a3a4a;
+}
+
+.nri-content .nri-table .nri-rate-line {
+  display: block;
+}
+
+.nri-content .nri-table .no-results {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* ── Surcharge table ── */
+
+.nri-content .nri-table.surcharge-table .col-rate {
+  color: #1a5db5;
+}
+
+/* ── Notes ── */
+
+.nri-content .nri-note {
+  font-size: 0.85rem;
+  color: #5a3e00;
+  background: #fff8e1;
+  border-left: 4px solid #f5a623;
+  border-radius: 3px;
+  padding: 9px 14px;
+  margin: 10px 0 18px;
+  line-height: 1.55;
+}
+
+/* ── Last updated ── */
+
+.nri-content .nri-last-updated {
+  font-size: 0.78rem;
+  color: #999;
+  text-align: right;
+  margin-top: 40px;
+  font-style: italic;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 700px) {
+  .nri-content .nri-page-title { font-size: 1.35rem; }
+  .nri-content .nri-year-tab   { padding: 6px 12px; font-size: 0.8rem; }
+  .nri-content .nri-table      { font-size: 0.78rem; }
+  .nri-content .nri-table thead th,
+  .nri-content .nri-table tbody td { padding: 7px 8px; }
+  .nri-content .nri-table .col-section { width: 90px; }
+  .nri-content .nri-table .col-rate    { width: 90px; }
+}

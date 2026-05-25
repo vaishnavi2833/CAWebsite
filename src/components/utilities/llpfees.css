@@ -1,0 +1,133 @@
+/* ── LLP Fees page ────────────────────────────────────────────────── */
+
+.llpf-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  min-height: 100vh;
+  padding: 40px 16px 60px;
+}
+
+.llpf-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.llpf-page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.llpf-subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 32px;
+}
+
+/* Section heading */
+
+.llpf-section-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: #283593;
+  padding: 11px 20px;
+  border-radius: 6px 6px 0 0;
+  margin: 0;
+}
+
+.llpf-section-heading--gap {
+  margin-top: 36px;
+}
+
+.llpf-section-desc {
+  font-size: 0.88rem;
+  color: #555;
+  background: #e8eaf6;
+  padding: 10px 20px;
+  margin: 0;
+  border-left: 4px solid #3f51b5;
+  line-height: 1.6;
+}
+
+/* Table */
+
+.llpf-table-scroll {
+  overflow-x: auto;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  margin-bottom: 0;
+}
+
+.llpf-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: #fff;
+}
+
+.llpf-table thead th {
+  background: #1a237e;
+  color: #fff;
+  padding: 11px 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.llpf-table thead th:last-child { text-align: right; }
+
+.llpf-table tbody td {
+  padding: 10px 20px;
+  border-bottom: 1px solid #e8eaf6;
+  color: #333;
+  line-height: 1.5;
+}
+
+.llpf-table tbody tr.llpf-row-alt { background: #f5f7fd; }
+.llpf-table tbody tr:hover { background: #e8eaf6; }
+
+.llpf-fee {
+  text-align: right;
+  font-weight: 700;
+  color: #1565c0;
+  white-space: nowrap;
+}
+
+/* Info block */
+
+.llpf-info-block {
+  background: #fff;
+  border-left: 4px solid #3f51b5;
+  padding: 14px 20px;
+  margin: 12px 0 0;
+  border-radius: 0 6px 6px 0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.llpf-info-block p {
+  margin: 0;
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Note block */
+
+.llpf-note-block {
+  margin-top: 28px;
+  background: #fffde7;
+  border-left: 4px solid #f9a825;
+  padding: 12px 20px;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.83rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.llpf-note-block p { margin: 0 0 4px; }
+.llpf-note-block p:last-child { margin-bottom: 0; }

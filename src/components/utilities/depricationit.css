@@ -1,0 +1,178 @@
+/* ── Depreciation IT Act page ────────────────────────────────────────── */
+
+.dit-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  min-height: 100vh;
+  padding: 40px 16px 60px;
+}
+
+.dit-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Header ──────────────────────────────────────────────────────────── */
+
+.dit-page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.dit-subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 28px;
+}
+
+/* ── Search Bar ─────────────────────────────────────────────────────── */
+
+.dit-search-bar {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 28px;
+  max-width: 520px;
+  position: relative;
+}
+
+.dit-search-bar input {
+  flex: 1;
+  padding: 10px 48px 10px 16px;
+  border: 2px solid #c5cae9;
+  border-radius: 24px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.dit-search-bar input:focus {
+  border-color: #3f51b5;
+}
+
+.dit-clear-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #888;
+  line-height: 1;
+  padding: 0;
+}
+
+.dit-clear-btn:hover { color: #333; }
+
+/* ── Table ───────────────────────────────────────────────────────────── */
+
+.dit-table-scroll {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  margin-bottom: 36px;
+}
+
+.dit-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: #fff;
+}
+
+.dit-table thead th {
+  background: #1a237e;
+  color: #fff;
+  padding: 14px 16px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.col-block { text-align: left !important; width: 82%; }
+.col-rate  { width: 18%; }
+
+/* Part rows */
+.dit-table tbody .part-row td {
+  background: #283593;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.93rem;
+  padding: 10px 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Category header rows */
+.dit-table tbody .category-row td {
+  background: #e8eaf6;
+  color: #1a237e;
+  font-weight: 600;
+  padding: 9px 16px;
+  font-size: 0.9rem;
+}
+
+/* Data rows */
+.dit-table tbody tr.row-alt { background: #f5f7fd; }
+.dit-table tbody tr:not(.category-row):not(.part-row):hover { background: #e3f2fd; }
+
+.dit-table td {
+  padding: 9px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+.asset-desc { color: #333; line-height: 1.5; }
+
+.rate-cell {
+  text-align: center;
+  font-weight: 600;
+  color: #1565c0;
+  white-space: nowrap;
+}
+
+.no-results {
+  text-align: center;
+  color: #999;
+  padding: 32px;
+  font-style: italic;
+}
+
+/* ── Notes ───────────────────────────────────────────────────────────── */
+
+.dit-section-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 14px;
+}
+
+.dit-notes-block {
+  background: #fff;
+  border-left: 4px solid #3f51b5;
+  border-radius: 6px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  margin-bottom: 24px;
+}
+
+.dit-notes-block p {
+  margin: 0 0 10px;
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.dit-notes-block p:last-child { margin-bottom: 0; }
+
+/* ── Footer note ─────────────────────────────────────────────────────── */
+
+.dit-last-updated {
+  text-align: right;
+  color: #888;
+  font-size: 0.8rem;
+  font-style: italic;
+}

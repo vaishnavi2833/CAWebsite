@@ -1,0 +1,133 @@
+/* ── Gold & Silver Rates page ───────────────────────────────────── */
+
+.gs-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  min-height: 100vh;
+  padding: 40px 16px 60px;
+}
+
+.gs-content {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.gs-page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.gs-subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 0.88rem;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+/* Search */
+
+.gs-search-bar {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto 20px;
+}
+
+.gs-search-bar input {
+  width: 100%;
+  padding: 10px 44px 10px 16px;
+  border: 2px solid #c5cae9;
+  border-radius: 24px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s;
+  box-sizing: border-box;
+}
+
+.gs-search-bar input:focus {
+  border-color: #3f51b5;
+}
+
+.gs-clear-btn {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #888;
+  padding: 0;
+  line-height: 1;
+}
+.gs-clear-btn:hover { color: #333; }
+
+/* Table */
+
+.gs-table-scroll {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+}
+
+.gs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+  background: #fff;
+}
+
+.gs-table thead th {
+  background: #1a237e;
+  color: #fff;
+  padding: 12px 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.gs-table thead th:first-child { text-align: left; }
+
+.gs-th-sub {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #c5cae9;
+}
+
+.gs-table tbody td {
+  padding: 9px 20px;
+  border-bottom: 1px solid #e8eaf6;
+}
+
+.gs-table tbody tr.gs-row-alt { background: #f5f7fd; }
+.gs-table tbody tr:hover { background: #e8eaf6; }
+
+.gs-date {
+  font-weight: 500;
+  color: #444;
+}
+
+.gs-gold {
+  text-align: right;
+  font-weight: 600;
+  color: #b8860b;
+}
+
+.gs-silver {
+  text-align: right;
+  font-weight: 600;
+  color: #607d8b;
+}
+
+.gs-no-results {
+  text-align: center;
+  color: #999;
+  padding: 28px;
+  font-style: italic;
+}
