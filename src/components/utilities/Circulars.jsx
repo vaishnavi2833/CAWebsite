@@ -28,7 +28,7 @@ export default function Circulars() {
 
   const fetchCirculars = (page = 1) => {
     setLoading(true);
-    const body = new FormData();
+    const body = new URLSearchParams();
     body.append('from_date',   fromDate);
     body.append('to_date',     toDate);
     body.append('filter_type', filterType);
