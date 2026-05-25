@@ -1,0 +1,299 @@
+/* ── TDS Page ── */
+
+.tds-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f7fb;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tds-content {
+  flex: 1;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+  width: 100%;
+}
+
+/* ── Main Title ── */
+.tds-content .tds-main-title {
+  text-align: center;
+  color: #023c6c;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+  border-bottom: 3px solid #004992;
+  padding-bottom: 12px;
+}
+
+/* ── Year Tabs ── */
+.tds-content .year-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.tds-content .year-tab {
+  padding: 8px 18px;
+  border: 2px solid #004992;
+  background-color: #fff;
+  color: #004992;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+  white-space: nowrap;
+}
+
+.tds-content .year-tab:hover {
+  background-color: #004992;
+  color: #fff;
+}
+
+.tds-content .year-tab.active {
+  background-color: #004992;
+  color: #fff;
+}
+
+/* ── Section Headings ── */
+.tds-content .section-heading {
+  text-align: center;
+  color: #023c6c;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 20px 0 16px;
+}
+
+.tds-content .sub-heading {
+  color: #004992;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 28px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #dde6f0;
+}
+
+.tds-content .tcs-heading {
+  margin-top: 36px;
+}
+
+/* ── Search Bar ── */
+.tds-content .search-bar {
+  margin-bottom: 18px;
+}
+
+.tds-content .search-bar input {
+  width: 100%;
+  max-width: 520px;
+  display: block;
+  padding: 10px 16px;
+  border: 1.5px solid #b0c4de;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #fff;
+}
+
+.tds-content .search-bar input:focus {
+  border-color: #004992;
+  box-shadow: 0 0 0 3px rgba(0, 73, 146, 0.1);
+}
+
+/* ── Table Wrapper ── */
+.tds-content .table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 8px;
+}
+
+/* ── Table Base ── */
+.tds-content .tds-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-size: 0.88rem;
+  min-width: 600px;
+}
+
+.tds-content .tds-table thead tr {
+  background-color: #004992;
+  color: #fff;
+}
+
+.tds-content .tds-table th {
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.tds-content .tds-table td {
+  padding: 10px 14px;
+  vertical-align: top;
+  color: #333;
+  line-height: 1.5;
+  border-bottom: 1px solid #e8eef4;
+}
+
+.tds-content .tds-table .row-even {
+  background-color: #f9fbfd;
+}
+
+.tds-content .tds-table .row-odd {
+  background-color: #ffffff;
+}
+
+.tds-content .tds-table tbody tr:hover {
+  background-color: #eef4fb;
+}
+
+/* ── Column widths ── */
+.tds-content .tds-table .col-section {
+  min-width: 90px;
+  font-weight: 600;
+  color: #004992;
+}
+
+.tds-content .tds-table .col-payment {
+  min-width: 280px;
+}
+
+.tds-content .tds-table .col-threshold {
+  min-width: 180px;
+}
+
+.tds-content .tds-table .col-rates {
+  min-width: 200px;
+}
+
+.tds-content .tds-table .no-result {
+  text-align: center;
+  color: #888;
+  padding: 20px !important;
+  font-style: italic;
+}
+
+/* ── Surcharge Table ── */
+.tds-content .surcharge-table .col-section {
+  min-width: 200px;
+}
+
+/* ── Interest Table ── */
+.tds-content .interest-table {
+  max-width: 680px;
+}
+
+/* ── Note Box ── */
+.tds-content .note-box {
+  background-color: #fff8e1;
+  border-left: 4px solid #f59e0b;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 20px 0;
+}
+
+.tds-content .note-box h4 {
+  color: #92400e;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.tds-content .note-box p {
+  color: #555;
+  font-size: 0.87rem;
+  margin: 4px 0;
+  line-height: 1.6;
+}
+
+/* ── Footnote ── */
+.tds-content .footnote {
+  font-size: 0.82rem;
+  color: #666;
+  margin: 6px 0 0;
+  font-style: italic;
+}
+
+/* ── Last Updated ── */
+.tds-content .last-updated {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 32px;
+  font-style: italic;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .tds-content .tds-main-title {
+    font-size: 1.4rem;
+  }
+
+  .tds-content .section-heading {
+    font-size: 1.1rem;
+  }
+
+  .tds-content .year-tab {
+    padding: 7px 13px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tds-content {
+    padding: 20px 12px 40px;
+  }
+
+  .tds-content .tds-main-title {
+    font-size: 1.15rem;
+  }
+
+  .tds-content .section-heading {
+    font-size: 1rem;
+  }
+
+  .tds-content .year-tabs {
+    gap: 6px;
+  }
+
+  .tds-content .year-tab {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+  }
+
+  .tds-content .sub-heading {
+    font-size: 0.97rem;
+  }
+
+  .tds-content .search-bar input {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .tds-content .tds-table {
+    font-size: 0.82rem;
+  }
+
+  .tds-content .tds-table th,
+  .tds-content .tds-table td {
+    padding: 8px 10px;
+  }
+
+  .tds-content .note-box {
+    padding: 12px 14px;
+  }
+
+  .tds-content .note-box p {
+    font-size: 0.82rem;
+  }
+}
