@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [openSubMenu, setOpenSubMenu] = useState(null);
   const navigate = useNavigate();
 
   const toggleMenu = () => {
@@ -14,6 +15,11 @@ const Navbar = () => {
 
   const toggleDropdown = (dropdownName) => {
     setOpenDropdown(openDropdown === dropdownName ? null : dropdownName);
+  };
+
+  const toggleSubMenu = (name, e) => {
+    e.stopPropagation();
+    setOpenSubMenu(openSubMenu === name ? null : name);
   };
 
   const handleHomeClick = () => {
@@ -125,17 +131,18 @@ const Navbar = () => {
             <ul className={`dropdown ${openDropdown === 'knowledge' ? 'active' : ''}`}>
               <li className='dropdown-item submenu'>Acts
                 <ul className="submenu-list">
-                  <li className="submenu-item has-submenu">Direct Tax
-                    <ul className='sub-submenu-list'>
+                  <li className="submenu-item has-submenu">
+                    <span onClick={(e) => toggleSubMenu('acts-direct-tax', e)}>Direct Tax</span>
+                    <ul className={`sub-submenu-list ${openSubMenu === 'acts-direct-tax' ? 'active' : ''}`}>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/income-tax-act')}>Income Tax Act</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/wealth-tax-act')}>Wealth Tax Act</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/income-declaration-scheme-2016')}>Income Declaration Scheme 2016</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/direct-tax-vivad-se-vishwas-scheme')}>Direct Tax Vivad se Vishwas Scheme</li>
                     </ul>
                   </li>
-                    
-                  <li className="submenu-item has-submenu">Indirect Tax
-                    <ul className='sub-submenu-list'>
+                  <li className="submenu-item has-submenu">
+                    <span onClick={(e) => toggleSubMenu('acts-indirect-tax', e)}>Indirect Tax</span>
+                    <ul className={`sub-submenu-list ${openSubMenu === 'acts-indirect-tax' ? 'active' : ''}`}>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/service-tax-finance-act-1994')}>Service Tax (Finance Act, 1994)</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/central-sales-tax-act-1956')}>Central Sales Tax Act, 1956</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/central-excise-act-1944')}>The Central Excise Act, 1944</li>
@@ -143,8 +150,9 @@ const Navbar = () => {
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/entry-tax-act')}>Entry Tax Act</li>
                     </ul>
                   </li>
-                  <li className="submenu-item has-submenu">Corporate Laws
-                    <ul className='sub-submenu-list'>
+                  <li className="submenu-item has-submenu">
+                    <span onClick={(e) => toggleSubMenu('acts-corporate-laws', e)}>Corporate Laws</span>
+                    <ul className={`sub-submenu-list ${openSubMenu === 'acts-corporate-laws' ? 'active' : ''}`}>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/companies-act-2013')}>Companies Act, 2013</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/companies-act-1956')}>Companies Act, 1956</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/llp-act')}>LLP Act</li>
@@ -152,8 +160,9 @@ const Navbar = () => {
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/company-secretaries-act-1980')}>Company Secretaries Act, 1980</li>
                     </ul>
                   </li>
-                  <li className="submenu-item has-submenu">VAT Laws
-                    <ul className='sub-submenu-list'>
+                  <li className="submenu-item has-submenu">
+                    <span onClick={(e) => toggleSubMenu('acts-vat-laws', e)}>VAT Laws</span>
+                    <ul className={`sub-submenu-list ${openSubMenu === 'acts-vat-laws' ? 'active' : ''}`}>
                       <li className='submenu-item' onClick={() => navigate('/kb/acts/delhi-value-added-tax-act-2004')}>Delhi Value Added Tax Act, 2004</li>
                       <li className='submenu-item' onClick={() => navigate('/kb/acts/mvat-act-2002')}>MVAT Act, 2002</li>
                       <li className='submenu-item' onClick={() => navigate('/kb/acts/west-bengal-vat-act-2003')}>West Bengal VAT Act, 2003</li>
@@ -169,8 +178,9 @@ const Navbar = () => {
                       <li className='submenu-item' onClick={() => navigate('/kb/acts/bihar-value-added-tax-act-2005')}>Bihar Value Added Tax Act, 2005</li>
                     </ul>
                   </li>
-                  <li className="submenu-item has-submenu">Other Statues
-                    <ul className='sub-submenu-list'>
+                  <li className="submenu-item has-submenu">
+                    <span onClick={(e) => toggleSubMenu('acts-other-statutes', e)}>Other Statues</span>
+                    <ul className={`sub-submenu-list ${openSubMenu === 'acts-other-statutes' ? 'active' : ''}`}>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/esi-act-1948')}>ESI Act, 1948</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/pf-act-1952')}>PF Act, 1952</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/professional-tax-act')}>Professional Tax Act</li>
@@ -187,8 +197,9 @@ const Navbar = () => {
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/benami-property-act-1988')}>Benami Property Act, 1988</li>
                     </ul>
                   </li>
-                  <li className="submenu-item has-submenu">GST Laws
-                    <ul className='sub-submenu-list'>
+                  <li className="submenu-item has-submenu">
+                    <span onClick={(e) => toggleSubMenu('acts-gst-laws', e)}>GST Laws</span>
+                    <ul className={`sub-submenu-list ${openSubMenu === 'acts-gst-laws' ? 'active' : ''}`}>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/igst-act-2017')}>IGST Act, 2017</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/cgst-act-2017')}>CGST Tax Act, 2017</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/acts/utgst-act-2017')}>UTGST Act, 2017</li>
@@ -199,15 +210,17 @@ const Navbar = () => {
               </li>
               <li className='dropdown-item submenu'>Rules
                 <ul className="submenu-list">
-                  <li className="submenu-item has-submenu">Direct Tax
-                    <ul className='sub-submenu-list'>
+                  <li className="submenu-item has-submenu">
+                    <span onClick={(e) => toggleSubMenu('rules-direct-tax', e)}>Direct Tax</span>
+                    <ul className={`sub-submenu-list ${openSubMenu === 'rules-direct-tax' ? 'active' : ''}`}>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/income-tax-act-rules')}>Income Tax Act Rules</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/wealth-tax-rules')}>Wealth Tax Rules 1957</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/income-declaration-scheme-rules')}>Income Declaration Scheme Rules 2016</li>
                     </ul>
                   </li>
-                  <li className="submenu-item has-submenu">Indirect Tax
-                    <ul className='sub-submenu-list'>
+                  <li className="submenu-item has-submenu">
+                    <span onClick={(e) => toggleSubMenu('rules-indirect-tax', e)}>Indirect Tax</span>
+                    <ul className={`sub-submenu-list ${openSubMenu === 'rules-indirect-tax' ? 'active' : ''}`}>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/gst-valuation-rules')}>GST Valuation Rules, 2016</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/service-tax-rules')}>Service Tax Rules</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/cst-delhi-rules')}>CST (Delhi) Rules, 2005</li>
@@ -217,16 +230,18 @@ const Navbar = () => {
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/entry-tax-rules')}>Entry Tax Rules</li>
                     </ul>
                   </li>
-                  <li className="submenu-item has-submenu">Corporate Laws
-                    <ul className='sub-submenu-list'>
+                  <li className="submenu-item has-submenu">
+                    <span onClick={(e) => toggleSubMenu('rules-corporate-laws', e)}>Corporate Laws</span>
+                    <ul className={`sub-submenu-list ${openSubMenu === 'rules-corporate-laws' ? 'active' : ''}`}>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/companies-rules-2014')}>Companies Rules, 2014</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/llp-rules-2009')}>LLP Rules, 2009</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/llp-winding-up-rules-2012')}>LLP Winding Up Rules, 2012</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/cos-unpaid-dividend-rules-1978')}>Cos Unpaid Dividend Rules, 1978</li>
                     </ul>
                   </li>
-                  <li className="submenu-item has-submenu">VAT Laws
-                    <ul className='sub-submenu-list'>
+                  <li className="submenu-item has-submenu">
+                    <span onClick={(e) => toggleSubMenu('rules-vat-laws', e)}>VAT Laws</span>
+                    <ul className={`sub-submenu-list ${openSubMenu === 'rules-vat-laws' ? 'active' : ''}`}>
                       <li className='submenu-item' onClick={() => navigate('/kb/rules/delhi-vat-rules-2005')}>Delhi VAT Rules, 2005</li>
                       <li className='submenu-item' onClick={() => navigate('/kb/rules/maharashtra-vat-rules-2005')}>Maharashtra VAT Rules, 2005</li>
                       <li className='submenu-item' onClick={() => navigate('/kb/rules/west-bengal-vat-rules-2005')}>West Bengal VAT Rules, 2005</li>
@@ -242,8 +257,9 @@ const Navbar = () => {
                       <li className='submenu-item' onClick={() => navigate('/kb/rules/bihar-vat-rules-2005')}>Bihar VAT Rules, 2005</li>
                     </ul>
                   </li>
-                  <li className="submenu-item has-submenu">Other Statutes
-                    <ul className='sub-submenu-list'>
+                  <li className="submenu-item has-submenu">
+                    <span onClick={(e) => toggleSubMenu('rules-other-statutes', e)}>Other Statutes</span>
+                    <ul className={`sub-submenu-list ${openSubMenu === 'rules-other-statutes' ? 'active' : ''}`}>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/profession-tax-rules')}>Profession Tax Rules</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/nbfc-deposits-directions-1978')}>NBFC Deposits Directions, 1978</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/nfbc-misc-nbc-advt-rules-1977')}>NBFC & Misc NBC (Advt) Rules, 1977</li>
@@ -256,8 +272,9 @@ const Navbar = () => {
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/benami-property-rules-2016')}>Benami Property Rules, 2016</li>
                     </ul>
                   </li>
-                  <li className="submenu-item has-submenu">GST Laws
-                    <ul className='sub-submenu-list'>
+                  <li className="submenu-item has-submenu">
+                    <span onClick={(e) => toggleSubMenu('rules-gst-laws', e)}>GST Laws</span>
+                    <ul className={`sub-submenu-list ${openSubMenu === 'rules-gst-laws' ? 'active' : ''}`}>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/cgst-rules-2017')}>CGST Rules, 2017</li>
                       <li className="submenu-item" onClick={() => navigate('/kb/rules/igst-rules-2017')}>IGST Rules, 2017</li>
                     </ul>
@@ -266,37 +283,37 @@ const Navbar = () => {
               </li>
               <li className='dropdown-item submenu'>Bulletins
                 <ul className="submenu-list">
-                  <li className="submenu-item">Circulars / Notifications</li>
+                  <li className="submenu-item" onClick={() => navigate('/kb/utilities/circulars-notifications')}>Circulars / Notifications</li>
                 </ul>
               </li>
               <li className='dropdown-item submenu'>Utilities
                 <ul className="submenu-list">
-                  <li className='submenu-item has-submenu'>Income Tax Bill 2025
-                    <ul className='sub-submenu-list'>
-                      <li className='submenu-item'>IT Act vs IT Bill, 2025 </li>
+                  <li className='submenu-item has-submenu'>
+                    <span onClick={(e) => toggleSubMenu('util-it-bill-2025', e)}>Income Tax Bill 2025</span>
+                    <ul className={`sub-submenu-list ${openSubMenu === 'util-it-bill-2025' ? 'active' : ''}`}>
                       <li className='submenu-item' onClick={() => navigate('/kb/utilities/income-tax-bill-2025')}>IT Bill 2025</li>
                       <li className='submenu-item' onClick={() => navigate('/kb/utilities/faqs-income-tax-bill')}>FAQs Income Tax Bill</li>
                       <li className='submenu-item' onClick={() => navigate('/kb/utilities/faqs-income-tax-bill-general')}>FAQs Income Tax Bill General</li>
                     </ul>
                   </li>
-                  <li className='submenu-item'>Rates of TDS</li>
-                  <li className='submenu-item'>TDS Rates for N.R.I. us 195</li>
-                  <li className='submenu-item'>Rates of Income Tax</li>
-                  <li className='submenu-item'>Depreciation Rates Companies Act</li>
-                  <li className='submenu-item'>Depreciation Rates Income Tax Act</li>
-                  <li className='submenu-item'>ROC Filing Fees (Cos Act, 2013)</li>
-                  <li className='submenu-item'>ROC Fee Structure (Cos Act, 2013)</li>
-                  <li className='submenu-item'>Cost Inflation Index</li>
-                  <li className='submenu-item'>IFSC Codes</li>
-                  <li className='submenu-item'>MICR Codes</li>
-                  <li className='submenu-item'>Rates of NSC Interest</li>
-                  <li className='submenu-item'>Gold and Silver Rates</li>
-                  <li className='submenu-item'>Rates of Stamp Duty</li>
-                  <li className='submenu-item'>LLP Fees</li>
-                  <li className='submenu-item'>Deduction u/s 80TTA Vs 80TTB</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/tds-tcs-rates')}>Rates of TDS</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/tds-rates-nri-195')}>TDS Rates for N.R.I. us 195</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/rates-of-income-tax')}>Rates of Income Tax</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/depreciation-rates-companies-act')}>Depreciation Rates Companies Act</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/depreciation-rates-income-tax')}>Depreciation Rates Income Tax Act</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/roc-filing-fees')}>ROC Filing Fees (Cos Act, 2013)</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/roc-fee-structure')}>ROC Fee Structure (Cos Act, 2013)</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/cost-inflation-index')}>Cost Inflation Index</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/ifsc-codes')}>IFSC Codes</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/micr-codes')}>MICR Codes</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/nsc-interest-rates')}>Rates of NSC Interest</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/gold-silver-rates')}>Gold and Silver Rates</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/stamp-duty-rates')}>Rates of Stamp Duty</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/llp-fees')}>LLP Fees</li>
+                  <li className='submenu-item' onClick={() => navigate('/kb/utilities/deduction-80tta-80ttb')}>Deduction u/s 80TTA Vs 80TTB</li>
                 </ul>
               </li>
-              <li className='dropdown-item submenu'>Links
+              {/* <li className='dropdown-item submenu'>Links
                 <ul className="submenu-list">
                   <li className='submenu-item'>PAN</li>
                   <li className='submenu-item'>TAN</li>
@@ -308,7 +325,7 @@ const Navbar = () => {
                   <li className='submenu-item'>MCA</li>
                   <li className='submenu-item'>CA / CS</li>
                 </ul>
-              </li>
+              </li> */}
             </ul>
           </li>
 
